@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import os
+from keys import *
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -20,7 +21,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'dzt_r5+u!*&^l$^tic*6)#3wzxn@=67eq*=hyhh5u^pod##=zx'
+#SECRET_KEY = moved to external file.
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -76,14 +77,14 @@ WSGI_APPLICATION = 'drrines.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
-
+# Moved database connect info to external file
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'dev4drrines',
-        'USER': 'development4postgresuser',
-        'PASSWORD': '7c2zu%NOiv_RNesSOl#yoz',
-        'HOST': 'drrines-dev4-postgres.cpfummht5mh0.us-east-2.rds.amazonaws.com',
+        'NAME': DB_NAME,
+        'USER': DB_USER,
+        'PASSWORD': DB_PASS,
+        'HOST': DB_HOST,
         'PORT': '5432',
     }
 }
