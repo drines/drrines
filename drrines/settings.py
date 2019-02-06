@@ -26,7 +26,8 @@ SECRET_KEY = 'dzt_r5+u!*&^l$^tic*6)#3wzxn@=67eq*=hyhh5u^pod##=zx'
 DEBUG = True
 
 ALLOWED_HOSTS = ['dev.drrines.com']
-
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
 
 # Application definition
 
