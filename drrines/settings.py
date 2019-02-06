@@ -25,7 +25,7 @@ SECRET_KEY = 'dzt_r5+u!*&^l$^tic*6)#3wzxn@=67eq*=hyhh5u^pod##=zx'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['dev.drrines.com', '3.17.2.85']
+ALLOWED_HOSTS = ['dev.drrines.com']
 
 
 # Application definition
