@@ -7,5 +7,5 @@ def quotes(request):
     return render(request, 'quotes.html')
 
 def tdauth(request):
-    response = requests.get('https://auth.tdameritrade.com/auth?response_type=code&redirect_uri=dev.drrines.com&client_id=DRRINES001@AMER.OAUTHAP')
+    response = requests.post('https://auth.tdameritrade.com/auth?response_type=code&redirect_uri=https://dev.drrines.com&client_id=TDDRRINES001@AMER.OAUTHAP')
     return HttpResponse(request, response)
