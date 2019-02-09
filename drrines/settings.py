@@ -26,7 +26,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['dev.drrines.com']
+ALLOWED_HOSTS = ['dev.drrines.com','3.17.2.85']
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
 
